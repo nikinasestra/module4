@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Диафрагма</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="data:," />
+  <style>
+    .page-404 {
+      min-height: 100vh;
+      background: #c8c8c8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* декоративные квадраты с анимацией цвета */
+    .deco-404 {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .deco-404--yellow {
+      width: 40px;
+      height: 40px;
+      left: 30%;
+      top: 48%;
+      animation: colorShift1 3s infinite;
+    }
+
+    .deco-404--teal {
+      width: 90px;
+      height: 90px;
+      left: 37%;
+      top: 38%;
+      animation: colorShift2 3s infinite;
+    }
+
+    .deco-404--grey {
+      width: 22px;
+      height: 22px;
+      right: 30%;
+      top: 38%;
+      animation: colorShift3 3s infinite;
+    }
+
+    @keyframes colorShift1 {
+      0%   { background: #FFFB7F; }
+      25%  { background: #ff5500; }
+      50%  { background: #83ffc9; }
+      75%  { background: #FF41E9; }
+      100% { background: #FFFB7F; }
+    }
+
+    @keyframes colorShift2 {
+      0%   { background: #00C6FF; }
+      25%  { background: #FFA73A; }
+      50%  { background: #0040FF; }
+      75%  { background: #83ffc9; }
+      100% { background: #00C6FF; }
+    }
+
+    @keyframes colorShift3 {
+      0%   { background: #7B7980; }
+      25%  { background: #390D0D; }
+      50%  { background: #FFFB7F; }
+      75%  { background: #ff0004; }
+      100% { background: #7B7980; }
+    }
+
+    /* центральная колонка */
+    .center-404 {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .center-404 .text-404 { margin-bottom: 8px; }
+
+    .bottom-404 {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      z-index: 2;
+    }
+
+    /* надпись 404 */
+    .text-404 {
+      font-size: 120px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      color: #ffffff;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    /* слайдшоу */
+    .slideshow-404 {
+      width: 200px;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slideshow-404__slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+
+    .slideshow-404__slide.is-active { opacity: 1; }
+
+    .slideshow-404__slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body class="page-wrapper" style="padding-top: 0;">
+
+  <div class="nav-bg"></div>
+  <nav class="nav">
+    <div class="nav__group">
+      <a class="nav__link" href="about.html">О нас</a>
+      <a class="nav__link" href="index.html">Главная</a>
+      <a class="nav__link" href="shop.html">Магазин</a>
+    </div>
+    <span class="nav__wordmark">Диафрагма</span>
+  </nav>
+
+  <div class="page-404">
+
+    <!-- декоративные квадраты -->
+    <div class="deco-404 deco-404--yellow"></div>
+    <div class="deco-404 deco-404--teal"></div>
+    <div class="deco-404 deco-404--grey"></div>
+
+    <div class="center-404">
+      <div class="text-404">404</div>
+      <p class="subtitle-404" style="font-size: 16px; color: #ffffff; letter-spacing: 0.02em; white-space: nowrap; margin: 0;">Страница не найдена</p>
+    </div>
+
+    <!-- слайдшоу + кнопка внизу -->
+    <div class="bottom-404">
+      <div class="slideshow-404" id="slideshow-404">
+        <div class="slideshow-404__slide is-active">
+          <img src="assets/img/404/IMG_STAYED_LONGER_THAN_PLANNED.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_BLESSED.JPG.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_RANDOM_HOTEL_IN_BATUMIscayl_1x_upscayl-standard-4x.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_SPRING_TIME_SWAG.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_GAS_STATION.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_WHERE_IS_THE_10TH.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_THIS_WAS_ENOUGH.png" alt="" />
+        </div>
+        <div class="slideshow-404__slide">
+          <img src="assets/img/404/IMG_CANYON.png" alt="" />
+        </div>
+      </div>
+      <a href="shop.html" style="background: #2CDFFF; color: #ffffff; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; padding: 10px 24px; text-decoration: none; white-space: nowrap;">Вернуться назад</a>
+    </div>
+
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slideshow-404__slide');
+    let idx = 0;
+    setInterval(() => {
+      slides[idx].classList.remove('is-active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('is-active');
+    }, 2000);
+  </script>
+
+</body>
+</html>

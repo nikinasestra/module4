@@ -1,0 +1,18 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("style.css");
+@import url("adaptive.css");
+
+:root {
+  --font: 'ABC Favorit CYR', 'Helvetica Neue', Arial, sans-serif;
+  --nav-h: 60px;
+  --accent-mint: #83ffc9;
+  --author-muted: rgba(123, 121, 127, 1);
+}
+
+body {
+  font-family: var(--font);
+  background: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}

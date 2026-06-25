@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выставка Диафрагма</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body class="page-index">
+
+  <!-- ══ NAV: прозрачный, поверх фона ══ -->
+  <div class="nav-bg"></div>
+  <nav class="nav nav--transparent">
+    <div class="nav__group">
+      <a class="nav__link" href="about.html">О нас</a>
+      <a class="nav__link" href="index.html">Главная</a>
+      <a class="nav__link" href="shop.html">Магазин</a>
+    </div>
+  </nav>
+
+
+  <!-- ══ FULLSCREEN HERO ══ -->
+  <div class="hero">
+
+    <!-- Фоновая картинка -->
+    <div class="hero__slideshow">
+      <img class="hero__bg-img" id="hero-bg" src="assets/img/3/IMG_BEST_BURGERS_HERE.JPG.png.png" alt="" />
+    </div>
+
+    <!-- Заголовок -->
+    <div class="hero__title">
+      <span class="hero__title-text">Выставка<br>Диафрагма</span>
+      <div class="hero__deco hero__deco--orange"></div>
+      <div class="hero__deco hero__deco--purple"></div>
+      <div class="hero__deco hero__deco--green"></div>
+      <div class="hero__deco hero__deco--yellow"></div>
+    </div>
+
+    <!-- Сайдбар: список авторов -->
+    <aside class="sidebar">
+      <a class="sidebar__item" href="author-1.html"
+         data-author="1"
+         data-preview="assets/img/1/preview.jpg">
+        <span class="sidebar__accent"></span>
+        <span class="sidebar__name">Есения Ланская</span>
+      </a>
+      <a class="sidebar__item" href="author-2.html"
+         data-author="2"
+         data-preview="assets/img/2/preview.jpg">
+        <span class="sidebar__accent"></span>
+        <span class="sidebar__name">Маша Ростокина</span>
+      </a>
+      <a class="sidebar__item" href="author-3.html"
+         data-author="3"
+         data-preview="assets/img/3/preview.jpg">
+        <span class="sidebar__accent"></span>
+        <span class="sidebar__name">Лука Кобия</span>
+      </a>
+      <a class="sidebar__item" href="author-4.html"
+         data-author="4"
+         data-preview="assets/img/4/preview.jpg">
+        <span class="sidebar__accent"></span>
+        <span class="sidebar__name">Мила Ким</span>
+      </a>
+    </aside>
+
+    <!-- Статичная превью-карточка автора -->
+    <div class="preview-card" id="preview-card">
+      <img id="preview-img" src="" alt="" />
+    </div>
+
+  </div><!-- /.hero -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
