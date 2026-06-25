@@ -1,19 +1,19 @@
 const AUTHORS = {
   1: {
-    preview: '../assets/img/1/ESENIYA.png',
-    bg: '../assets/img/slides/slide-1/IMG_CUTIE-fidelity-4xslide1.png',
+    preview: 'assets/img/1/ESENIYA.png',
+    bg: 'assets/img/slides/slide-1/IMG_CUTIE-fidelity-4xslide1.png',
   },
   2: {
-    preview: '../assets/img/2/MASHA.png',
-    bg: '../assets/img/slides/slide-2/IMG_MY_BFFSslide2.png',
+    preview: 'assets/img/2/MASHA.png',
+    bg: 'assets/img/slides/slide-2/IMG_MY_BFFSslide2.png',
   },
   3: {
-    preview: '../assets/img/3/LUKA.png',
-    bg: '../assets/img/slides/slide-3/IMG_CANYONslide3.png',
+    preview: 'assets/img/3/LUKA.png',
+    bg: 'assets/img/slides/slide-3/IMG_CANYONslide3.png',
   },
   4: {
-    preview: '../assets/img/4/MILA.png',
-    bg: '../assets/img/slides/slide-4/IMG_RED_VEHICLES_FOREVERslide4.png',
+    preview: 'assets/img/4/MILA.png',
+    bg: 'assets/img/slides/slide-4/IMG_RED_VEHICLES_FOREVERslide4.png',
   },
 };
 
